@@ -1,0 +1,125 @@
+main{
+    display: flex; 
+    flex-direction: column;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+article{
+width: 40%;
+padding-top: 2rem;
+padding-bottom: 2rem;
+background-color: #FEFAF5;
+border-radius: 40px;
+box-shadow: 4px 3px 6px #707070;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.single-comment{
+padding: 1rem;
+background-color: #FEFAF5;
+border-radius: 15px;
+box-shadow: 4px 3px 6px #707070;
+margin-bottom: 1rem;
+}
+
+.single-comment h2{
+    font-size: medium;
+}
+
+form{
+    text-align: center;
+}
+
+.leave-comment{
+    margin-top: auto;
+}
+
+label{
+display: flex;
+flex-direction: column;
+}
+
+textarea{
+    resize: none;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    box-shadow: 2px 3px 6px #707070;
+}
+
+.content{
+    height: 5vw;
+}
+
+.head{
+text-align: center;
+}
+article h2{
+    font-size: 2vw;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+ h3{
+    font-size: smaller;
+    margin:0;
+    color: #707070;
+}
+
+article p{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    line-height: 2rem;
+}
+
+
+/*BUTTONS*/
+.button-div{
+text-align: center;
+margin-bottom: 3rem;
+margin-top: 3rem;
+}
+    button{
+        font-family: var(--primary-font);
+        text-transform: uppercase;
+        color: #707070;
+        font-weight: bolder;
+        border-radius: 20px;
+        border: none;
+        background-color: #FEFAF5;
+        box-shadow: 2px 5px 6px #707070;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+.submit{
+margin-top: 1rem;
+margin-bottom: 1rem;
+padding: 0.5rem;
+}
+    .create-post{
+        font-size: 1.5vw;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    button:hover{
+        color:#91C7FC;
+        transition: all 0.3s;
+        box-shadow: 2px 5px 6px #81A4C7;
+    }
+.create-post:hover{
+    font-size: 1.6vw;
+}
+button:focus{
+    outline:none;
+}
