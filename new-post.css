@@ -8,6 +8,7 @@ main h2{
 #post-sec{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
@@ -112,6 +113,39 @@ button:focus{
             font-size: 1.6rem;
             box-shadow: 2px 5px 6px #81A4C7;
         }
-        
+    @media only screen and (max-width: 1260px){
+        #title-text,
+        #info{
+            width: 40%;
+    }
+    button{
+    width: 50%;
+    }
+}
+
+@media only screen and (max-width: 750px){
+
+button{
+padding:1rem;
+}
+#title-text,
+#info{
+row-gap: 1rem;
+}
+}
+
+@media only screen and (max-width: 640px){
+#title-text,
+#info{
+    width: 100%;
+    row-gap: 0.5rem;
+    }
+
+#info{
+    justify-content: space-around;
+
+    }
+    
+}
         
     
