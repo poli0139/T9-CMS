@@ -1,19 +1,19 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #F5F2ED;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f2ed;
 }
-html{
-    font-family: "Montserrat", sans-serif;
+html {
+  font-family: "Montserrat", sans-serif;
 }
-header h1{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 4rem;
-    color: #707070;
-    font-weight: lighter;
-    text-decoration-line: overline;
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #707070;
+  font-weight: lighter;
+  text-decoration-line: overline;
 }
-header a{
-    text-decoration: none;
+header a {
+  text-decoration: none;
 }

@@ -1,151 +1,143 @@
-main h2{
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bolder;
-    color: #707070;
-    text-decoration-line: overline;
+main h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  color: #707070;
+  text-decoration-line: overline;
 }
-#post-sec{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+#post-sec {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 #title-text,
 label,
-#info
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #title-text,
-#info{
-    width: 30%;
-    padding: 2rem;
-    row-gap: 2rem;
-
+#info {
+  width: 30%;
+  padding: 2rem;
+  row-gap: 2rem;
 }
 
-label{
-    row-gap: 1rem;
+label {
+  row-gap: 1rem;
 }
-textarea, 
-input{
-border: none;
-border-radius: 15px;
-box-shadow: 2px 3px 4px #707070;
-padding: 1rem;
-font-family: "Montserrat", sans-serif;
+textarea,
+input {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 2px 3px 4px #707070;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
-textarea, 
-input, 
-button:focus{
-    outline:none;
+textarea,
+input,
+button:focus {
+  outline: none;
 }
 
-#textPost{
-    resize: none;
-    height: 15rem;
+#textPost {
+  resize: none;
+  height: 15rem;
 }
 
 /*MESSAGe*/
-#message{
+#message {
+  opacity: 0;
+  background-color: #fefaf5;
+  box-shadow: 4px 5px 6px #81a4c7;
+  padding: 2rem;
+  color: #707070;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  text-transform: uppercase;
+}
+.animate {
+  animation: showMessage;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+#message span {
+  color: #91c7fc;
+  transition: all 0.2s;
+}
+@keyframes showMessage {
+  from {
     opacity: 0;
-    background-color: #FEFAF5;
-    box-shadow: 4px 5px 6px #81A4C7;
-    padding: 2rem;
-    color: #707070;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    text-transform: uppercase;
-}
-.animate{
-    animation: showMessage;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
-}
-#message span{
-    color: #91C7FC;
-    transition: all 0.2s;
-}
-@keyframes showMessage{
-    from {
-        opacity: 0;
-        transform: scale(0.5);
-    }
+    transform: scale(0.5);
+  }
 
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-#button-div{
-    text-align: center;
-    
-    }
-        button{
-            font-family: var(--primary-font);
-            text-transform: uppercase;
-            color: #707070;
-            font-weight: bolder;
-            border-radius: 20px;
-            font-size: 1.5rem;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            padding-left: 2.5rem;
-            padding-right: 2.5rem;
-            border: none;
-            background-color: #FEFAF5;
-            box-shadow: 2px 5px 6px #707070;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        button:hover{
-            color:#91C7FC;
-            transition: all 0.3s;
-            font-size: 1.6rem;
-            box-shadow: 2px 5px 6px #81A4C7;
-        }
-    @media only screen and (max-width: 1260px){
-        #title-text,
-        #info{
-            width: 40%;
-    }
-    button{
+#button-div {
+  text-align: center;
+}
+button {
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  color: #707070;
+  font-weight: bolder;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  border: none;
+  background-color: #fefaf5;
+  box-shadow: 2px 5px 6px #707070;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  color: #91c7fc;
+  transition: all 0.3s;
+  font-size: 1.6rem;
+  box-shadow: 2px 5px 6px #81a4c7;
+}
+@media only screen and (max-width: 1260px) {
+  #title-text,
+  #info {
+    width: 40%;
+  }
+  button {
     width: 50%;
-    }
+  }
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 750px) {
+  button {
+    padding: 1rem;
+  }
+  #title-text,
+  #info {
+    row-gap: 1rem;
+  }
+}
 
-button{
-padding:1rem;
-}
-#title-text,
-#info{
-row-gap: 1rem;
-}
-}
-
-@media only screen and (max-width: 640px){
-#title-text,
-#info{
+@media only screen and (max-width: 640px) {
+  #title-text,
+  #info {
     width: 100%;
     row-gap: 0.5rem;
-    }
+  }
 
-#info{
+  #info {
     justify-content: space-around;
-
-    }
-    
+  }
 }
-        
-    
